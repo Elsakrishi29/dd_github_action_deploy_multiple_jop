@@ -40,7 +40,8 @@ jobs:
           datadog_site: "us5.datadoghq.com"
           public_ids: |
             jxf-qps-yzi 
-            
+          failOnCriticalErrors: true
+
   butterfly:
     needs: build
     runs-on: ubuntu-latest
@@ -57,3 +58,4 @@ jobs:
           datadog_site: "us5.datadoghq.com"
           public_ids: |
             dzm-ruw-gn8
+          failOnCriticalErrors: true
